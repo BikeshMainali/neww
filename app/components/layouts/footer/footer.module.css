@@ -1,0 +1,154 @@
+.footer {
+    background-color: #F9F7FE;
+    padding: 5rem 8rem 2rem;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  
+  .companyInfo {
+    max-width: 220px;
+  }
+  
+  .footerLogo h2 {
+    color: #181E4B;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+  }
+  
+  .tagline {
+    color: #5E6282;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .footerLinks {
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .linksColumn h4 {
+    color: #181E4B;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .linksColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linksColumn li {
+    margin-bottom: 1rem;
+  }
+  
+  .linksColumn a {
+    color: #5E6282;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .linksColumn a:hover {
+    color: #FF7D68;
+  }
+  
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .socialLinks h4 {
+    color: #181E4B;
+    font-size: 1.1rem;
+    margin: 2rem 0 1rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: white;
+    color: #5E6282;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .socialIcon:hover {
+    transform: translateY(-3px);
+  }
+  
+  .instagramIcon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+  }
+  
+  .appStoreButtons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .storeButton {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .storeButton:hover {
+    transform: translateY(-3px);
+  }
+  
+  .copyright {
+    text-align: center;
+    border-top: 1px solid #F7F7F7;
+    padding-top: 2rem;
+    color: #5E6282;
+    font-size: 0.85rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .footer {
+      padding: 4rem 4rem 2rem;
+    }
+    
+    .footerLinks {
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .footerContent {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    
+    .footerLinks {
+      flex-wrap: wrap;
+    }
+    
+    .linksColumn, .socialLinks {
+      min-width: 40%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      padding: 3rem 2rem 1.5rem;
+    }
+    
+    .linksColumn, .socialLinks {
+      min-width: 100%;
+    }
+  }

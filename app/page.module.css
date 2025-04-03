@@ -1,0 +1,16 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heroContainer {
+    background-color: #FFF1DA;
+    min-height: 100vh;
+  }
+  
+  @media (max-width: 900px) {
+    .heroContainer {
+      min-height: auto;
+    }
+  }

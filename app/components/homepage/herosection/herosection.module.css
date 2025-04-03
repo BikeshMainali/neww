@@ -1,0 +1,153 @@
+.heroSection {
+    display: flex;
+    align-items: center;
+    padding: 2rem 8rem 6rem;
+    background-color: #FFF1DA;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contentContainer {
+    flex: 1;
+    max-width: 550px;
+    z-index: 1;
+  }
+  
+  .tagline {
+    color: #DF6951;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  
+  .heading {
+    color: #181E4B;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+  }
+  
+  .description {
+    color: #5E6282;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 90%;
+  }
+  
+  .ctaContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .primaryButton {
+    background-color: #F1A501;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primaryButton:hover {
+    background-color: #D99000;
+  }
+  
+  .demoButton {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+    border: none;
+    color: #5E6282;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .playIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DF6951;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imageWrapper {
+    position: relative;
+  }
+  
+  .travelerImage {
+    object-fit: contain;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .planeDeco1 {
+    position: absolute;
+    top: 10%;
+    right: -15%;
+    z-index: 2;
+    animation: floatPlane 6s ease-in-out infinite;
+  }
+  
+  .planeDeco2 {
+    position: absolute;
+    bottom: 30%;
+    right: -20%;
+    z-index: 2;
+    animation: floatPlane 8s ease-in-out infinite;
+  }
+  
+  @keyframes floatPlane {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+  
+  @media (max-width: 1200px) {
+    .heroSection {
+      padding: 2rem 4rem 4rem;
+    }
+    
+    .heading {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .heroSection {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 1rem;
+    }
+    
+    .contentContainer {
+      max-width: 100%;
+      margin-bottom: 3rem;
+    }
+    
+    .description {
+      max-width: 100%;
+    }
+    
+    .ctaContainer {
+      justify-content: center;
+    }
+  }
