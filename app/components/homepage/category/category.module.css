@@ -94,3 +94,47 @@
               grid-template-columns: repeat(2, 1fr);
           }
         }
+
+
+        /* Add for tablets */
+@media (max-width: 768px) {
+  .categorySection {
+    padding: 3rem 1.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .categoryGrid {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 1.5rem;
+  }
+
+  .categoryCard {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Add for small phones */
+@media (max-width: 480px) {
+  .categorySection {
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .subheading {
+    font-size: 0.9rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.1rem;
+  }
+
+  .categoryDescription {
+    font-size: 0.85rem;
+  }
+}
